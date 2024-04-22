@@ -38,6 +38,7 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
+import { HashLink } from "react-router-hash-link";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -112,7 +113,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Home</span>
+                      <Link to="/#service"> <span className="nav-link-inner--text">Our Service</span> </Link>
                     </DropdownToggle>
                     {/* <DropdownMenu>
                       <DropdownItem to="/landing-page" tag={Link}>
@@ -134,7 +135,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">About</span>
+                      <HashLink smoot to="/#about"> <span className="nav-link-inner--text">About</span> </HashLink>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                 </Nav>
