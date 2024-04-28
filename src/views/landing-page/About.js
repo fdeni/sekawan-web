@@ -11,7 +11,7 @@ const items = [
     header: "",
   },
   {
-    src: require("assets/img/theme/img-2-1200x1000.jpg"),
+    src: require("assets/img/team/team-2.jpg"),
     altText: "",
     caption: "",
     header: "",
