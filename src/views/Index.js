@@ -1,20 +1,4 @@
-/*!
 
-=========================================================
-* Argon Design System React - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -28,6 +12,7 @@ import OurService from "./landing-page/OurService.js";
 import About from "./landing-page/About.js";
 
 import Contact from "./landing-page/Contact.js";
+import Portofolio from "./landing-page/Portofolio.js";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -42,6 +27,7 @@ class Index extends React.Component {
         <main ref="main">
           <section id='service'><OurService /></section>
           <section id='about'><About /></section>
+          <section id='portofolio'><Portofolio /></section>
           <section id='contact'><Contact /></section>
         </main>
       </>

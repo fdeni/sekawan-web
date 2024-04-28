@@ -15,6 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+import CardLink from "components/CardLink";
 import React from "react";
 
 // reactstrap components
@@ -146,6 +147,7 @@ class OurService extends React.Component {
                           src={require("assets/img/card/1.jpg")}
                         ></CardImg>
                       </Card>
+                      {/* <CardLink image = "assets/img/card/1.jpg" link="/detail/wedding"></CardLink> */}
                     </Col>
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
