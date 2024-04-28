@@ -6,6 +6,9 @@ import { Button, Card, Container, Row, Col } from "reactstrap";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
+/*
+  package detail
+*/
 
 class PageDetail extends React.Component {
   componentDidMount() {
