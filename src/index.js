@@ -13,6 +13,7 @@ import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import PageDetail from "views/package-detail/PackageDetail";
+import PageBooking from "views/booking/Booking";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -25,6 +26,7 @@ root.render(
       <Route path="/profile-page" exact element={<Profile />} />
       <Route path="/register-page" exact element={<Register />} />
       <Route path="/detail/wedding" exact element={<PageDetail />} />
+      <Route path="/booking" exact element={<PageBooking />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>
