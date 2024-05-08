@@ -37,6 +37,7 @@ import {
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
+import Contact from "views/landing-page/Contact";
 
 class Login extends React.Component {
   componentDidMount() {
@@ -224,7 +225,7 @@ class Login extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        <Contact />
       </>
     );
   }

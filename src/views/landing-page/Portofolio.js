@@ -30,7 +30,7 @@ class Portofolio extends React.Component {
               <span />
             </div>
             <Container className="py-md">
-              <Row className="justify-content-between align-items-center">
+              {/* <Row className="justify-content-between align-items-center">
                 <Col className="mb-5 mb-lg-0" lg="5">
                 <img
                         alt="..."
@@ -70,7 +70,7 @@ class Portofolio extends React.Component {
                     <UncontrolledCarousel items={items} />
                   </div>
                 </Col>
-              </Row>
+              </Row> */}
             </Container>
             {/* SVG separator */}
             <div className="separator separator-bottom separator-skew">

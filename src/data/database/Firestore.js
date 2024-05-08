@@ -1,14 +1,18 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
 
-
-const firebaseConfig = require('../config/firebaseConfig');
-
+const firebaseConfig = {
+    apiKey: "AIzaSyA7O2EuHHQRy33QVPVm87x-52na5efidUE",
+    authDomain: "sekawan-web.firebaseapp.com",
+    projectId: "sekawan-web",
+    storageBucket: "sekawan-web.appspot.com",
+    messagingSenderId: "822513298542",
+    appId: "1:822513298542:web:0e930c99c0672db1740a7f",
+    measurementId: "G-7M2YWFRRRT"
+  };
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app)
 
-export const auth = getAuth();
-
-export default getFirestore(app);
+export default db;
 
 
