@@ -14,6 +14,7 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import WeddingDetails from "views/package-detail/WeddingDetails";
 import PreWeddingDetails from "views/package-detail/PreWeddingDetails";
+import PageBooking from "views/booking/Booking";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
