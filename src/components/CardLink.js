@@ -1,40 +1,46 @@
-// import React from 'react';
-// import { useHistory } from 'react-router-dom';
+import React from "react";
+// reactstrap components
+import {
+  Button,
+  Card,
+  CardImg,
+  CardBody,
+  CardTitle,
+  CardText
+} from "reactstrap";
 
-// import {
-//     Card,
-//     CardImg,
-//   } from "reactstrap";
+class Cards extends React.Component {
+  render() {
+    const { title, price ,bodies, image} = this.props;
+    return (
+      <>
+        <Card style={{ width: "18rem" , height: "900px", overflowY: "auto"}}>
+        <CardImg
+            alt=""
+            src={image}
+            top
+          />
+          <CardBody>
+          <Button
+              color="primary"
+              href="#pablo"
+              onClick={e => e.preventDefault()}
+            >
+              Booking
+            </Button>
+            <div className="mt-2">
+            <CardTitle><h3><strong>{title}</strong></h3></CardTitle>
+            <CardTitle><strong>{price}</strong></CardTitle>
+            {bodies.map((body, index) => (
+              <CardText key={index}>{body}</CardText>
+            ))}
+            </div>
+            
+          </CardBody>
+        </Card>
+      </>
+    );
+  }
+}
 
-// class CardCustom extends React.Component {
-//     constructor(props) {
-//         super(props);
-//       }
-//       handleClick = () => {
-//         const { history } = this.props;
-//         history.push('/other');
-//       }
-
-//     render() {
-//         const { image } = this.props.image;
-//         return (
-//             <div onClick={this.handleClick}>
-//                 <Card className="card-lift--hover shadow border-0">
-//                     <CardImg
-//                         alt="..."
-//                         src={require({image})}
-//                     ></CardImg>
-//                 </Card>
-//             </div>
-//         );
-//     }
-// }
-
-// const CardLink = () => {
-//     const navigate = useNavigate();
-  
-//     return <CardCustom navigate={navigate} />;
-//   }
-  
-
-// export default CardLink;
+export default Cards;
