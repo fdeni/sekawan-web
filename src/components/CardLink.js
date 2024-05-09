@@ -1,4 +1,5 @@
 import React from "react";
+import { NumericFormat } from "react-number-format";
 // reactstrap components
 import {
   Button,
@@ -6,36 +7,47 @@ import {
   CardImg,
   CardBody,
   CardTitle,
-  CardText
+  Row,
 } from "reactstrap";
+import withRouter from "./WithRouterWrapper";
+import { Link } from "react-router-dom";
 
 class Cards extends React.Component {
   render() {
-    const { title, price ,bodies, image} = this.props;
+    const { title, packageItem, price, bodies, image } = this.props;
     return (
       <>
-        <Card style={{ width: "18rem" , height: "900px", overflowY: "auto"}}>
-        <CardImg
+        <Card style={{ width: "15rem", height: "60rem", overflowY: "auto", marginTop: "1.5rem" }}>
+          <CardImg
             alt=""
             src={image}
             top
           />
           <CardBody>
-          <Button
-              color="primary"
-              href="#pablo"
-              onClick={e => e.preventDefault()}
-            >
-              Booking
-            </Button>
+            <Row className="justify-content-center">
+              <Link to={{
+                pathname: "/booking",
+                state: {
+                  package: packageItem
+                }
+              }} >
+                <Button color="primary">
+                  Booking
+                </Button>
+              </Link>
+            </Row>
             <div className="mt-2">
-            <CardTitle><h3><strong>{title}</strong></h3></CardTitle>
-            <CardTitle><strong>{price}</strong></CardTitle>
-            {bodies.map((body, index) => (
-              <CardText key={index}>{body}</CardText>
-            ))}
+              <Row className="justify-content-center mt-3">
+                <CardTitle><h5><strong>{title}</strong></h5></CardTitle></Row>
+              <Row className="justify-content-center">
+                <CardTitle> <NumericFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} /></CardTitle>
+              </Row>
+
+              {bodies.map((body, index) => (
+                <p className="text-black-50" key={index}>{body}</p>
+              ))}
             </div>
-            
+
           </CardBody>
         </Card>
       </>
@@ -43,4 +55,4 @@ class Cards extends React.Component {
   }
 }
 
-export default Cards;
+export default withRouter(Cards);

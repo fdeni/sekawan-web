@@ -21,7 +21,6 @@ import React from "react";
 import {
   Button,
   Card,
-  CardHeader,
   CardBody,
   FormGroup,
   Form,
@@ -36,16 +35,19 @@ import {
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
 import Contact from "views/landing-page/Contact";
+import withRouter from "components/WithRouterWrapper";
 
-class Login extends React.Component {
+class Booking extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
+    let stateData = this.router
   }
   render() {
+    // const { packageItem } = this.state;
+    console.log(this.stateData)
     return (
       <>
         <DemoNavbar />
@@ -231,4 +233,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default withRouter(Booking);

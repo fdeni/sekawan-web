@@ -1,21 +1,4 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import CardLink from "components/CardLink";
+import withRouter from "components/WithRouterWrapper";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -50,16 +33,16 @@ class OurService extends React.Component {
             </div>
             </section> */}
           <section className="section section-shaped mt--150">
-          <Container>
+            <Container>
               <Row className="justify-content-center text-center mb-lg-n-7">
                 <Col lg="9">
                   <h2 className="display-5">Choose your story.</h2>
                   <p className="lead text-muted">
-                   Everybody has their own love story. and you have your own love story to tell.
+                    Everybody has their own love story. and you have your own love story to tell.
                   </p>
                 </Col>
               </Row>
-              </Container>
+            </Container>
           </section>
 
           <section className="section section-lg pt-lg-0 mt--100">
@@ -78,20 +61,24 @@ class OurService extends React.Component {
                       </Link>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardImg
-                          alt="..."
-                          src={require("assets/img/card/2.jpg")}
-                        ></CardImg>
-                      </Card>
+                      <Link to="/detail/pre-wedding">
+                        <Card className="card-lift--hover shadow border-0">
+                          <CardImg
+                            alt="..."
+                            src={require("assets/img/card/3.jpg")}
+                          ></CardImg>
+                        </Card>
+                      </Link>
                     </Col>
                     <Col lg="4">
-                      <Card className="card-lift--hover shadow border-0">
-                        <CardImg
-                          alt="..."
-                          src={require("assets/img/card/3.jpg")}
-                        ></CardImg>
-                      </Card>
+                      <Link to="/detail/lamaran">
+                        <Card className="card-lift--hover shadow border-0">
+                          <CardImg
+                            alt="..."
+                            src={require("assets/img/card/2.jpg")}
+                          ></CardImg>
+                        </Card>
+                      </Link>
                     </Col>
                   </Row>
                   <Row className="row-grid justify-content-center">
@@ -122,4 +109,4 @@ class OurService extends React.Component {
   }
 }
 
-export default OurService;
+export default withRouter(OurService);
