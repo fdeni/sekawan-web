@@ -32,6 +32,8 @@ class Booking extends React.Component {
     console.log(this.props)
   }
   render() {
+    // const { packageItem } = this.state;
+    console.log(this.stateData)
     return (
       <>
         <DemoNavbar />
