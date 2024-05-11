@@ -25,7 +25,7 @@ root.render(
       <Route path="/login-page" exact element={<Login />} />
       <Route path="/profile-page" exact element={<Profile />} />
       <Route path="/register-page" exact element={<Register />} />
-      <Route path="/detail/:id" exact element={<PageDetail />} />
+      <Route path="/detail/package" exact element={<PageDetail />} />
       <Route path="/booking" exact element={<PageBooking />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

@@ -51,7 +51,7 @@ class OurService extends React.Component {
                 <Col lg="12">
                   <Row className="row-grid">
                     <Col lg="4">
-                      <Link to="/detail/wedding">
+                      <Link to="/detail/package" state={{ service: "wedding" }}>
                         <Card className="card-lift--hover shadow border-0">
                           <CardImg
                             alt="..."
@@ -61,7 +61,7 @@ class OurService extends React.Component {
                       </Link>
                     </Col>
                     <Col lg="4">
-                      <Link to="/detail/pre-wedding">
+                      <Link to="/detail/package" state={{ service: "pre-wedding" }}>
                         <Card className="card-lift--hover shadow border-0">
                           <CardImg
                             alt="..."
@@ -71,7 +71,7 @@ class OurService extends React.Component {
                       </Link>
                     </Col>
                     <Col lg="4">
-                      <Link to="/detail/lamaran">
+                      <Link to="/detail/package" state={{ service: "lamaran" }}>
                         <Card className="card-lift--hover shadow border-0">
                           <CardImg
                             alt="..."

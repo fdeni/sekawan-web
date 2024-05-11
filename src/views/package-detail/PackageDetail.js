@@ -22,7 +22,7 @@ class PageDetail extends React.Component {
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
 
-    const id = this.props.router.params.id;
+    const id = this.props.router.location.state.service;
     const services = doc(db, 'services', id);
     const servicesSnapshot = await getDoc(services);
     let data = servicesSnapshot.data();
@@ -70,8 +70,6 @@ class PageDetail extends React.Component {
               <div className="mt--300">
                 <div className="pr-4">
                   <Row className="justify-content-center">
-                    {/* {this.state.service.map(data => <p>{data.name}</p>)} */}
-
                     {
                       this.state.service.map((item) => (
                         item.packages.map((prop) => (
@@ -80,10 +78,9 @@ class PageDetail extends React.Component {
                               image={require("assets/img/card/wedding.jpg")}
                               title={prop.title}
                               price={prop.price}
-                              packageItem={prop}
+                              packageItem={[item.name,prop]}
                               bodies={prop.items}
                             />
-
                           </Col>
                         )
                         )

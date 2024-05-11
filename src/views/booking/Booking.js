@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -38,16 +21,17 @@ import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import Contact from "views/landing-page/Contact";
 import withRouter from "components/WithRouterWrapper";
 
+
 class Booking extends React.Component {
-  componentDidMount() {
+
+  async componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
-    let stateData = this.router
+
+    console.log(this.props)
   }
   render() {
-    // const { packageItem } = this.state;
-    console.log(this.stateData)
     return (
       <>
         <DemoNavbar />
@@ -60,7 +44,7 @@ class Booking extends React.Component {
                   <Card className="bg-secondary shadow border-0">
                     <CardBody className="bg-white px-lg-5 py-lg-5">
                       <div className="text-center text-muted mb-4">
-                        <small>Booking Data</small>
+                        <small>Lamaran - Double - Rp.1600000 </small>
                       </div>
                       <Form role="form">
                         <FormGroup className="mb-3">

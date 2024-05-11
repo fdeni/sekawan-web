@@ -8,6 +8,7 @@ import {
   CardBody,
   CardTitle,
   Row,
+  Col,
 } from "reactstrap";
 import withRouter from "./WithRouterWrapper";
 import { Link } from "react-router-dom";
@@ -17,35 +18,31 @@ class Cards extends React.Component {
     const { title, packageItem, price, bodies, image } = this.props;
     return (
       <>
-        <Card style={{ width: "15rem", height: "60rem", overflowY: "auto", marginTop: "1.5rem" }}>
+        <Card style={{ width: "15rem", height: "50rem", overflowY: "auto", marginTop: "1.5rem" }} className="shadow border-0">
           <CardImg
             alt=""
             src={image}
             top
           />
           <CardBody>
-            <Row className="justify-content-center">
-              <Link to={{
-                pathname: "/booking",
-                state: {
-                  package: packageItem
-                }
-              }} >
-                <Button color="primary">
-                  Booking
-                </Button>
-              </Link>
-            </Row>
+
             <div className="mt-2">
-              <Row className="justify-content-center mt-3">
-                <CardTitle><h5><strong>{title}</strong></h5></CardTitle></Row>
+              <Row className="justify-content-center ">
+                <h5 className="text-grey">{title}</h5></Row>
               <Row className="justify-content-center">
                 <CardTitle> <NumericFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} /></CardTitle>
               </Row>
+              <Row className="justify-content-center mb-3">
+                <Link to="/booking" state={{ package: packageItem }} >
+                  <Button color="primary" outline type="button" size="md">
+                    Booking
+                  </Button>
+                </Link>
+              </Row>
+                {bodies.map((body, index) => (
+                    <p className="mt-1 mb-0 text-muted" key={index}>{body}</p>
+                ))}
 
-              {bodies.map((body, index) => (
-                <p className="text-black-50" key={index}>{body}</p>
-              ))}
             </div>
 
           </CardBody>
