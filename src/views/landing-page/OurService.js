@@ -65,7 +65,7 @@ class OurService extends React.Component {
                     </Link>
                   </Col>
                 </Row>
-                <Row className="justify-content-center">
+                <Row className="justify-content-center mt-3">
                   <Col lg="12" xs="8" md="12">
                     <Row className="row row-cols-lg-3 justify-content-center">
                       <Col className="col-md-4">

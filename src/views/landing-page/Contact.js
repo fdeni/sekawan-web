@@ -16,7 +16,7 @@ class Contact extends React.Component {
         <footer className="section">
           <Container>
             <Row className=" row-grid align-items-center mb-5 mt-4">
-              <Col lg="6">
+              <Col lg="5">
                 <p className="text-black-50 mb-2">
                  We're so happy to have you here. If you're interested in our works, that means you have a great taste in seeing pictures through photography just like us. Follow our media social below.
                 </p>
