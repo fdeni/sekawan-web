@@ -1,5 +1,5 @@
 import React from "react";
-import db from '../../data/database/Firestore'
+import firebaseApps from '../../data/database/Firebase'
 import { doc, getDoc } from 'firebase/firestore';
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -23,7 +23,7 @@ class PageDetail extends React.Component {
     this.refs.main.scrollTop = 0;
 
     const id = this.props.router.location.state.service;
-    const services = doc(db, 'services', id);
+    const services = doc(firebaseApps.db, 'services', id);
     const servicesSnapshot = await getDoc(services);
     let data = servicesSnapshot.data();
     console.log(data)

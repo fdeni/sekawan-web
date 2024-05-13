@@ -1,5 +1,5 @@
 import { Timestamp, doc, setDoc } from 'firebase/firestore';
-import db from '../../data/database/Firestore'
+import firebaseApps from './Firebase'
 
 async function insertBooking(bookingData) {
     
@@ -22,9 +22,16 @@ async function insertBooking(bookingData) {
         brideInstagram: bookingData.brideInstagram,
         groomInstagram: bookingData.brideInstagram,
       };
+
+    // const data =
+    // {
+    //   listFoto:[
+
+    //   ]
+    // }
     
       try {
-        await setDoc(doc(db, "booking", bookingId), data);
+        await setDoc(doc(firebaseApps.db, "booking", bookingId), data);
         console.log("Document booking written with ID: ", bookingId);
       } catch (e) {
         console.error("Error adding document: ", e);
