@@ -20,9 +20,23 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import Contact from "views/landing-page/Contact";
 import withRouter from "components/WithRouterWrapper";
+import insertBooking from "data/database/FirestoreDataSource";
 
+const bookingSample = {
+  bride: "test",
+  groom: "test",
+  service: "wedding",
+  package: "single",
+  eventDate: '2024-12-12',
+  startTime: '12:00',
+  endTime: '16:00',
+  eventAddress: 'Karanganyar',
+  brideInstagram: 'testbride',
+  groomInstagram: 'testgroom',
+}
 
 class Booking extends React.Component {
+
 
   async componentDidMount() {
     document.documentElement.scrollTop = 0;
@@ -30,6 +44,8 @@ class Booking extends React.Component {
     this.refs.main.scrollTop = 0;
 
     console.log(this.props)
+
+   
   }
   render() {
     // const { packageItem } = this.state;
@@ -201,6 +217,8 @@ class Booking extends React.Component {
                             className="my-4"
                             color="primary"
                             type="button"
+                            onClick={() => insertBooking(bookingSample)}
+                     
                           >
                             Book Now
                           </Button>
