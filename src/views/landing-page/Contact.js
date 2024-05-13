@@ -3,9 +3,6 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  NavItem,
-  NavLink,
-  Nav,
   Container,
   Row,
   Col,
@@ -16,22 +13,36 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <footer className=" footer">
+        <footer className="section">
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
+            <Row className=" row-grid align-items-center mb-5 mt-4">
               <Col lg="6">
-                <h3 className=" text-primary font-weight-light mb-2">
-                  Thank you for supporting us!
-                </h3>
-                <h4 className=" mb-0 font-weight-light">
+                <p className="text-black-50 mb-2">
+                 We're so happy to have you here. If you're interested in our works, that means you have a great taste in seeing pictures through photography just like us. Follow our media social below.
+                </p>
+                <h4 className=" mb-0 font-weight-light mt-5">
                   Let's get in touch.
                 </h4>
               </Col>
               <Col className="text-lg-center btn-wrapper" lg="6">
+               <Button
+                  className="btn-icon-only rounded-circle ml-1"
+                  color="success"
+                  href="https://wa.me/+6285156081975"
+                  id="tooltip837440414"
+                  target="_blank"
+                >
+                  <span className="btn-inner--icon">
+                    <i className="fa fa-whatsapp" />
+                  </span>
+                </Button>
+                <UncontrolledTooltip delay={0} target="tooltip837440414">
+                 Chat us
+                </UncontrolledTooltip>
                 <Button
                   className="btn-icon-only rounded-circle ml-1"
                   color="facebook"
-                  href="https://www.facebook.com/sekawan_stories"
+                  href="https://www.facebook.com/sekawan.stories"
                   id="tooltip837440414"
                   target="_blank"
                 >
@@ -54,7 +65,7 @@ class Contact extends React.Component {
                   </span>
                 </Button>
                 <UncontrolledTooltip delay={0} target="tooltip829810202">
-                  Follow us
+                 Follow us
                 </UncontrolledTooltip>
               </Col>
             </Row>
@@ -62,7 +73,7 @@ class Contact extends React.Component {
             <Row className=" align-items-center justify-content-md-between">
               <Col md="6">
                 <div className=" copyright">
-                  © {new Date().getFullYear()}{" "}
+                  © 2020{" "}
                   <a
                     href="/#"
                     target="_blank"
@@ -71,18 +82,6 @@ class Contact extends React.Component {
                   </a>
                   .
                 </div>
-              </Col>
-              <Col md="6">
-                <Nav className=" nav-footer justify-content-end">
-                  <NavItem>
-                    <NavLink
-                      href="/#"
-                      target="_blank"
-                    >
-                      Sekawan Stories
-                    </NavLink>
-                  </NavItem>
-                </Nav>
               </Col>
             </Row>
           </Container>

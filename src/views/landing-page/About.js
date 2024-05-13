@@ -22,71 +22,7 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <section className="section section-lg section-shaped pb-200">
-          <div className="shape shape-style-1 shape-light">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-          <Container className="py-lg-md d-flex">
-            <div className="col px-0">
-              <Row>
-                <Col lg="6">
-                  <h1 className="display-3 text-black-50">
-                    {/* Every Couple is Journey{" "} */}
-                    <span>Every Couple is Journey</span>
-                  </h1>
-                  <p className="lead text-black-50">
-                    Our passion for photography and videography capture moments with honesty and pure emotions, and we love telling those stories for you.
-
-                    we believe that every couple has unique stories to tell.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-          </Container>
-          {/* <Container className="shape-container d-flex align-items-center py-lg"> */}
-          <Container className="shape-container d-flex align-items-center">
-            <div className="col px-0">
-              <Row className="align-items-center justify-content-center">
-                <Col className="text-center" lg="6">
-                  <img
-                    alt="..."
-                    className="img-fluid"
-                    src={require("assets/img/brand/sekawan-logo.png")}
-                    style={{ width: "20%" }}
-                  />
-                  {/* <p className="lead text-white">
-                      Our Service:
-                    </p> */}
-                </Col>
-              </Row>
-            </div>
-          </Container>
-          {/* SVG separator */}
-          {/* <div className="separator separator-bottom separator-skew zindex-100">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon
-                className="fill-white"
-                points="2560 0 2560 100 0 100"
-              />
-            </svg>
-          </div> */}
-        </section>
-        <section className="section section-shaped">
+        <section className="section section-shaped mt--50">
           <div className="shape shape-style-1 ">
             <span />
             <span />

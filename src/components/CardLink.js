@@ -8,7 +8,6 @@ import {
   CardBody,
   CardTitle,
   Row,
-  Col,
 } from "reactstrap";
 import withRouter from "./WithRouterWrapper";
 import { Link } from "react-router-dom";

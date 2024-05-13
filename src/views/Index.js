@@ -25,8 +25,8 @@ class Index extends React.Component {
       <>
         <DemoNavbar />
         <main ref="main">
+          <section id='portofolio'><Portofolio/></section>
           <section id='about'><About /></section>
-          <section id='portofolio'><Portofolio /></section>
           <section id='service'><OurService /></section>
           <section id='contact'><Contact /></section>
         </main>

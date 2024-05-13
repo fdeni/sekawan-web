@@ -5,22 +5,16 @@ import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  // Button,
   UncontrolledCollapse,
-  // DropdownMenu,
-  // DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
-  // Media,
   NavbarBrand,
   Navbar,
-  NavItem,
-  NavLink,
   Nav,
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
+
 } from "reactstrap";
 import { HashLink } from "react-router-hash-link";
 
@@ -94,54 +88,38 @@ class DemoNavbar extends React.Component {
                   </Row>
                 </div>
                 <Nav className=" align-items-lg-center mr-4" navbar>
-                <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <HashLink className="h10 text-dark" smooth to="/#about">About Us</HashLink>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
-                </Nav>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <HashLink className="h10 text-dark" smooth to="/#service">Our Service</HashLink>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
-                </Nav>
-                <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1"/>
-                      <HashLink className="h10 text-dark" smooth to="/#portofolio">Portofolio</HashLink>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
-                </Nav>
-                <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <HashLink className="h10 text-dark" smooth to="/#contact">Contact</HashLink>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
-                </Nav>
-                <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      // href="https://www.facebook.com/creativetim"
-                      id="tooltip333589074"
-                      target="_blank"
-                    >
-                      <i className="fa fa-shopping-cart" />
-                      <span className="nav-link-inner--text text-dark d-lg-none ml-2">
-                        Cart
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Order
-                    </UncontrolledTooltip>
-                  </NavItem>
+                  <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
+                    <UncontrolledDropdown nav>
+                      <DropdownToggle nav>
+                        {/* <i className="ni ni-collection d-lg-none mr-1" /> */}
+                        <HashLink className="h10 text-dark" smooth to="/#portofolio">Portofolio</HashLink>
+                      </DropdownToggle>
+                    </UncontrolledDropdown>
+                  </Nav>
+                  <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
+                    <UncontrolledDropdown nav>
+                      <DropdownToggle nav>
+                        {/* <i className="ni ni-collection d-lg-none mr-1" /> */}
+                        <HashLink className="h10 text-dark" smooth to="/#about">About Us</HashLink>
+                      </DropdownToggle>
+                    </UncontrolledDropdown>
+                  </Nav>
+                  <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
+                    <UncontrolledDropdown nav>
+                      <DropdownToggle nav>
+                        {/* <i className="ni ni-collection d-lg-none mr-1" /> */}
+                        <HashLink className="h10 text-dark" smooth to="/#service">Our Service</HashLink>
+                      </DropdownToggle>
+                    </UncontrolledDropdown>
+                  </Nav>
+                  <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
+                    <UncontrolledDropdown nav>
+                      <DropdownToggle nav>
+                        {/* <i className="ni ni-collection d-lg-none mr-1" /> */}
+                        <HashLink className="h10 text-dark" smooth to="/#contact">Contact</HashLink>
+                      </DropdownToggle>
+                    </UncontrolledDropdown>
+                  </Nav>
                 </Nav>
               </UncontrolledCollapse>
             </Container>
