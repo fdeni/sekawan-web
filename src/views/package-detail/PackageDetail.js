@@ -1,18 +1,15 @@
 import React from "react";
-import firebaseApps from '../../data/database/Firebase'
+import firebaseApps from '../../data/database/Firebase';
 import { doc, getDoc } from 'firebase/firestore';
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
-import Cards from "components/CardLink.js"
+import Cards from "components/CardLink.js";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import Contact from "views/landing-page/Contact";
 import withRouter from "components/WithRouterWrapper";
 
-
-
 class PageDetail extends React.Component {
-
   state = {
     service: []
   };
@@ -68,34 +65,25 @@ class PageDetail extends React.Component {
           <section className="section">
             <Container>
               <div className="mt--300">
-                <div className="pr-4">
-                  <Row className="justify-content-center">
-                    {
-                      this.state.service.map((item) => (
-                        item.packages.map((prop) => (
-                          <Col className="col-6 col-md-3">
-                            <Cards
-                              image={require("assets/img/card/wedding.jpg")}
-                              title={prop.title}
-                              price={prop.price}
-                              packageItem={[item.name,prop]}
-                              bodies={prop.items}
-                            />
-                          </Col>
-                        )
-                        )
-                      ))
-                    }
-
-                  </Row>
-                </div>
+                <Row className="justify-content-center">
+                  {this.state.service.map((item) => (
+                    item.packages.map((prop, index) => (
+                      <Col key={index} xs="12" sm="6" md="6" lg="3" className="mb-4 d-flex justify-content-center">
+                        <Cards
+                          image={require("assets/img/card/wedding.jpg")}
+                          title={prop.title}
+                          price={prop.price}
+                          packageItem={[item.name, prop]}
+                          bodies={prop.items}
+                        />
+                      </Col>
+                    ))
+                  ))}
+                </Row>
               </div>
-
             </Container>
           </section>
-
         </main>
-
         <Contact />
       </>
     );

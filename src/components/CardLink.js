@@ -17,8 +17,8 @@ class Cards extends React.Component {
     const { title, packageItem, price, bodies, image } = this.props;
     return (
       <>
-        <Card style={{ width: "15rem", height: "50rem", overflowY: "auto", marginTop: "1.5rem" }} className="shadow border-0">
-          <CardImg
+        <Card style={{ width: "17rem", overflowY: "auto", marginTop: "1.5rem" }} className="shadow border-0">
+          <CardImg style={{height:"17rem"}}
             alt=""
             src={image}
             top
@@ -38,9 +38,11 @@ class Cards extends React.Component {
                   </Button>
                 </Link>
               </Row>
-                {bodies.map((body, index) => (
-                    <p className="mt-1 mb-0 text-muted" key={index}>{body}</p>
-                ))}
+              {bodies.map((body, index) => (
+                    <p style={{ fontSize: "0.68rem"}} className="mt-0 mb-0 text-muted" key={index}>{body}</p>
+                ))
+                }
+                
 
             </div>
 
