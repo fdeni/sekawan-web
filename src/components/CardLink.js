@@ -18,7 +18,7 @@ class Cards extends React.Component {
     return (
       <>
         <Card style={{ width: "17rem", overflowY: "auto", marginTop: "1.5rem" }} className="shadow border-0">
-          <CardImg style={{height:"17rem"}}
+          <CardImg style={{height:"auto", maxHeight:"17rem"}}
             alt=""
             src={image}
             top
@@ -26,8 +26,8 @@ class Cards extends React.Component {
           <CardBody>
 
             <div className="mt-2">
-              <Row className="justify-content-center ">
-                <h5 className="text-grey">{title}</h5></Row>
+              <Row className="justify-content-center">
+                <p className="text-grey">{title}</p></Row>
               <Row className="justify-content-center">
                 <CardTitle> <NumericFormat value={price} displayType={'text'} thousandSeparator={true} prefix={'Rp. '} /></CardTitle>
               </Row>

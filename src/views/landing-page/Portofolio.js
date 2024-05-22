@@ -84,7 +84,7 @@ class Portofolio extends React.Component {
         <section className="section section-sm section-shaped">
           <Container className="py-lg-md d-flex">
             <div className="col px-0">
-              <Row className="justify-content-center">
+              <Row className="justify-content-center mt-4">
                 <Col lg="7">
                   <h2 className="display-4 text-black-50 text-center">
                     <span>Every Couple is Journey</span>

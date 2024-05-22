@@ -36,7 +36,8 @@
     .nav-link.active,
     .show > .nav-link {
         color: $nav-pills-link-active-color;
-        background-color: $nav-pills-link-active-bg;
+        background-color: $nav-pills-link-active-bg;    
+        // box-shadow: 0 0 0 0 rgba(94, 114, 228, 0.5);
     }
 
     @include media-breakpoint-down(xs) {

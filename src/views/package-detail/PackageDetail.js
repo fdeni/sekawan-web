@@ -68,7 +68,7 @@ class PageDetail extends React.Component {
                 <Row className="justify-content-center">
                   {this.state.service.map((item) => (
                     item.packages.map((prop, index) => (
-                      <Col key={index} xs="12" sm="6" md="6" lg="3" className="mb-4 d-flex justify-content-center">
+                      <Col key={index} xs="6" sm="4" md="6" lg="3" className="mb-4 d-flex justify-content-center">
                         <Cards
                           image={require("assets/img/card/wedding.jpg")}
                           title={prop.title}

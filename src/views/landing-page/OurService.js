@@ -69,20 +69,24 @@ class OurService extends React.Component {
                   <Col lg="12" xs="8" md="12">
                     <Row className="row row-cols-lg-3 justify-content-center">
                       <Col className="col-md-4">
-                        <Card className="card-lift--hover shadow border-0">
-                          <CardImg
-                            alt="..."
-                            src={require("assets/img/card/4.jpg")}
-                          ></CardImg>
-                        </Card>
+                        <Link to="/detail/package" state={{ service: "intimate-wedding" }}>
+                          <Card className="card-lift--hover shadow border-0">
+                            <CardImg
+                              alt="..."
+                              src={require("assets/img/card/4.jpg")}
+                            ></CardImg>
+                          </Card>
+                        </Link>
                       </Col>
                       <Col className="col-md-4">
-                        <Card className="card-lift--hover shadow border-0">
-                          <CardImg
-                            alt="..."
-                            src={require("assets/img/card/5.jpg")}
-                          ></CardImg>
-                        </Card>
+                        <Link to="/detail/package-studio" state={{ service: "sekawan-studio" }}>
+                          <Card className="card-lift--hover shadow border-0">
+                            <CardImg
+                              alt="..."
+                              src={require("assets/img/card/5.jpg")}
+                            ></CardImg>
+                          </Card>
+                        </Link>
                       </Col>
                     </Row>
                   </Col>
