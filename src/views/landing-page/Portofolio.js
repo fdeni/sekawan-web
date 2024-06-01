@@ -2,64 +2,71 @@ import loadPortofolioImages from "data/database/StorageDatasource";
 import React from "react";
 import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 
-// const items = [
-//   {
-//     src: require("assets/img/portofolio/1.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/2.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/3.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/4.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/5.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/6.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/7.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-//   {
-//     src: require("assets/img/portofolio/8.jpg"),
-//     className: "img-fluid",
-//     altText: "",
-//     caption: "",
-//     header: "",
-//   },
-// ];
+const items = [
+  {
+    src: require("assets/img/portofolio/1.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/2.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/3.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/4.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/5.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/6.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/7.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/8.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+  {
+    src: require("assets/img/portofolio/9.jpg"),
+    className: "img-fluid",
+    altText: "",
+    caption: "",
+    header: "",
+  },
+];
 
 class Portofolio extends React.Component {
   state = {
@@ -78,7 +85,8 @@ class Portofolio extends React.Component {
       <>
         <section className="section-portofolio section-shaped" lg="6">
           <div className="shape-container d-flex align-items-center">
-            <UncontrolledCarousel items={this.state.listImages} />
+            {/* <UncontrolledCarousel items={this.state.listImages} /> */}
+            <UncontrolledCarousel items={items} />
           </div>
         </section>
         <section className="section section-sm section-shaped">
