@@ -1,3 +1,4 @@
+import Testimonials from "components/Testimonials";
 import React from "react";
 
 // reactstrap components
@@ -22,15 +23,8 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <section className="section section-shaped mt--50">
-          <div className="shape shape-style-1 ">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
+        <section className="section section-shaped">
+  
           <Container className="py-md">
             <Row className="justify-content-between align-items-center">
               <Col className="mb-5 mb-lg-0" lg="5">
@@ -74,19 +68,90 @@ class About extends React.Component {
               </Col>
             </Row>
           </Container>
+
+          <Container className="pt-lg pb-100">
+            <Row className="text-center justify-content-center">
+              <Col lg="12" xs="12">
+                <h2 className="display-4 text-black-50 text-center"><span>Why choose us?</span></h2>
+                <p className="text-black-50">
+                  We love to create epic images and videos, actually we are obsessed with it.
+                  The reason why you should choose us as your wedding photographer and videographer
+                </p>
+              </Col>
+            </Row>
+            <Row className="row-grid mb-4 mb-md-0 mt-lg-2">
+              <Col lg="4" md="4" sm="6" xs="6" className="mt-3 mt-lg-0 mt-sm-0 mt-md-0">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-settings text-black-50" />
+                </div>
+                <h5 style={{ fontSize: "1.1rem" }} className="text-black-50 mt-3">Experience</h5>
+                <p style={{ fontSize: "0.9rem" }} className="text-black-50 mt-3">
+                  More than 4 years as a professional wedding vendor documentation, worked on more than 1500 couples.
+                </p>
+              </Col>
+              <Col lg="4" md="4" sm="6" xs="6" className="mt-3 mt-lg-0 mt-sm-0 mt-md-0">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-favourite-28 text-black-50" />
+                </div>
+                <h5 style={{ fontSize: "1.1rem" }} className="text-black-50 mt-3">Full Service</h5>
+                <p style={{ fontSize: "0.9rem" }} className="text-black-50 mt-3">
+                  We always provide personalized service to each couple we work with. Understand your vision and preferences, ensuring the result meet your specific needs
+                </p>
+              </Col>
+              <Col lg="4" md="4" sm="6" xs="6" className="mt-3 mt-lg-0 mt-sm-0 mt-md-0">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-camera-compact text-black-50" />
+                </div>
+                <h5 style={{ fontSize: "1.1rem" }} className="text-black-50 mt-3">Quality Documentation</h5>
+                <p style={{ fontSize: "0.9rem" }} className="text-black-50 mt-3">
+                  We offer high-quality photo prints, albums, and cinematic videos to help you preserve and showcase your wedding memories for years to come.
+                </p>
+              </Col>
+              <Col lg="4" md="4" sm="6" xs="6" className="mt-3 mt-lg-0 mt-sm-0 mt-md-0">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-spaceship text-black-50" />
+                </div>
+                <h5 style={{ fontSize: "1.1rem" }} className="text-black-50 mt-3">Creativity</h5>
+                <p style={{ fontSize: "0.9rem" }} className="text-black-50 mt-3">
+                  Our team is not just skilled technically, we also bring a creative eye to our work. We capture the emotions and atmosphere of your wedding day.
+                </p>
+              </Col>
+              <Col lg="4" md="4" sm="6" xs="6" className="mt-3 mt-lg-0 mt-sm-0 mt-md-0">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-satisfied text-black-50" />
+                </div>
+                <h5 style={{ fontSize: "1.1rem" }} className="text-black-50 mt-3">Positive Testimonials</h5>
+                <p style={{ fontSize: "0.9rem" }} className="text-black-50 mt-3">
+                  Our past clients have to say about their good experience with us. Positive reviews and testimonials can provide valuable insight to our team.
+                </p>
+              </Col>
+              <Col lg="4" md="4" sm="6" xs="6" className="mt-3 mt-lg-0 mt-sm-0 mt-md-0">
+                <div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+                  <i className="ni ni-money-coins text-black-50" />
+                </div>
+                <h5 style={{ fontSize: "1.1rem" }} className="text-black-50 mt-3">Value for Money</h5>
+                <p style={{ fontSize: "0.9rem" }} className="text-black-50 mt-3">
+                  We may not be the cheapest option, we believe that we offer excellent value for money. Investing in memories that will last a lifetime.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+        
+            {/* <Container> */}
+              <Row className="justify-content-center text-center mb-md">
+                <Col lg="8">
+                <h2 className="display-4 text-black-50 text-center"><span>Testimonials</span></h2>
+                  <p className="text-black-50">
+                  Our past clients have to say about their good experience with us. Every insight, reviews, and testimonials become valuable to our team.
+                  </p>
+                </Col>
+              </Row>
+              <Testimonials></Testimonials>
+            {/* </Container> */}
+      
+
           {/* SVG separator */}
-          <div className="separator separator-bottom separator-skew">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              version="1.1"
-              viewBox="0 0 2560 100"
-              x="0"
-              y="0"
-            >
-              <polygon className="fill-white" points="2560 0 2560 100 0 100" />
-            </svg>
-          </div>
+        
         </section>
       </>
     );

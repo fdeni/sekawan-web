@@ -100,7 +100,7 @@ class DemoNavbar extends React.Component {
                     <UncontrolledDropdown nav>
                       <DropdownToggle nav>
                         {/* <i className="ni ni-collection d-lg-none mr-1" /> */}
-                        <HashLink className="h10 text-dark" smooth to="/#about">About Us</HashLink>
+                        <HashLink className="h10 text-dark" smooth to="/#service">Our Service</HashLink>
                       </DropdownToggle>
                     </UncontrolledDropdown>
                   </Nav>
@@ -108,10 +108,11 @@ class DemoNavbar extends React.Component {
                     <UncontrolledDropdown nav>
                       <DropdownToggle nav>
                         {/* <i className="ni ni-collection d-lg-none mr-1" /> */}
-                        <HashLink className="h10 text-dark" smooth to="/#service">Our Service</HashLink>
+                        <HashLink className="h10 text-dark" smooth to="/#about">About Us</HashLink>
                       </DropdownToggle>
                     </UncontrolledDropdown>
                   </Nav>
+                  
                   <Nav className="navbar-nav-hover align-items-lg-center mr-4" navbar>
                     <UncontrolledDropdown nav>
                       <DropdownToggle nav>

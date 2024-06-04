@@ -21,6 +21,7 @@ import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import Contact from "views/landing-page/Contact";
 import withRouter from "components/WithRouterWrapper";
 import insertBooking from "data/database/FirestoreDataSource";
+import TableBook from "components/TableBook";
 
 const bookingSample = {
   bride: "test",
@@ -49,6 +50,7 @@ class Booking extends React.Component {
   }
   render() {
     // const { packageItem } = this.state;
+    const packageItem = this.props.router.location.state.package;
     console.log(this.stateData)
     return (
       <>
@@ -61,9 +63,14 @@ class Booking extends React.Component {
                 <Col lg="8">
                   <Card className="bg-secondary shadow border-0">
                     <CardBody className="bg-white px-lg-5 py-lg-5">
-                      <div className="text-center text-muted mb-4">
-                        <small>Lamaran - Double - Rp.1600000 </small>
-                      </div>
+                    <TableBook
+                        // image={this.state.image}
+                        serviceName={packageItem[0]}
+                        packageItem={packageItem[1].title}
+                        serviceList={packageItem[1].items}
+                        price={packageItem[1].price}
+                        minDp={packageItem[1]["minimal-dp"]}
+                      ></TableBook>
                       <Form role="form">
                         <FormGroup className="mb-3">
                           <InputGroup className="input-group-alternative">

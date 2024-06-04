@@ -16,18 +16,7 @@ class OurService extends React.Component {
     return (
       <>
         <div className="position-relative">
-          <section className="">
-            <Container>
-              <Row className="justify-content-center text-center mb-lg-n-2">
-                <Col lg="7">
-                  <h2 className="display-4 text-black-50 text-center"><span>Choose your story.</span></h2>
-                  <p className="text-black-50 mt-3 text-center">
-                    Everybody has their own love story. and you have your own love story to tell.
-                  </p>
-                </Col>
-              </Row>
-            </Container>
-          </section>
+
 
           {/* <section className="section section-md pt-md-0 mt--50"> */}
           <Container className="pd-sm-n-3">
@@ -93,6 +82,27 @@ class OurService extends React.Component {
                 </Row>
               </Col>
             </Row>
+          </Container>
+
+          <Container>
+            <Row className="justify-content-center text-center mb-lg-n-2 mt-4">
+              <Col lg="7">
+                <h2 className="display-4 text-black-50 text-center"><span>Choose your story.</span></h2>
+                <p className="text-black-50 mt-3 text-center">
+                  Everybody has their own love story. and you have your own love story to tell.
+                </p>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container className="shape-container d-flex align-items-center mt-5">
+            <div className="col px-0">
+              <Row className="align-items-center justify-content-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe title="portofolio" class="embed-responsive-item" src="https://www.youtube.com/embed/xFC8YYO5gy4?si=M-ZrnYHiFyFF3ewI" allowfullscreen></iframe>
+                </div>
+              </Row>
+            </div>
           </Container>
           {/* </section> */}
         </div>

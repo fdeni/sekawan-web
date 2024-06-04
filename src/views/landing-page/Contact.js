@@ -77,6 +77,7 @@ class Contact extends React.Component {
                   <a
                     href="/#"
                     target="_blank"
+                    className="text-black-50"
                   >
                     Sekawan Stories
                   </a>
