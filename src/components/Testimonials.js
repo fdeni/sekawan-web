@@ -59,7 +59,7 @@ function Testimonials(props) {
 
                 <Row className='justify-content-center'>
 
-                    <Col className="mb-5 mb-lg-0" lg="3" md="6">
+                    <Col className="mb-5 mb-lg-2" lg="3" md="6" sm="6" xs="5">
                         <div className="px-4">
                             <img
                                 alt="..."
@@ -69,8 +69,8 @@ function Testimonials(props) {
                             />
                             <div className="pt-4 text-center">
                                 <h5 className="title">
-                                    <span className="d-block mb-1">Heru & Helma</span>
-                                    <p className="text-black-50">
+                                    <span className="text-black-50 mb-1">Heru & Helma</span>
+                                    <p style={{ fontSize: "0.8rem" }} className="text-black-50">
                                         "Sekawan stories kereennnn"
                                     </p>
                                 </h5>
@@ -78,7 +78,7 @@ function Testimonials(props) {
                             </div>
                         </div>
                     </Col>
-                    <Col className="mb-5 mb-lg-0" lg="3" md="6">
+                    <Col className="mb-5 mb-lg-2" lg="3" md="6" sm="6" xs="5">
                         <div className="px-4">
                             <img
                                 alt="..."
@@ -88,15 +88,15 @@ function Testimonials(props) {
                             />
                             <div className="pt-4 text-center">
                                 <h5 className="title">
-                                    <span className="d-block mb-1">Raffi & Nagita</span>
-                                    <p className="text-black-50"> "photographer nya sat set parah"</p>
+                                    <span className="text-black-50 mb-1">Raffi & Nagita</span>
+                                    <p style={{ fontSize: "0.8rem" }} className="text-black-50"> "photographer nya sat set parah"</p>
                                 </h5>
 
 
                             </div>
                         </div>
                     </Col>
-                    <Col className="mb-5 mb-lg-0" lg="3" md="6">
+                    <Col className="mb-5 mb-lg-2" lg="3" md="6" sm="6" xs="5">
                         <div className="px-4">
                             <img
                                 alt="..."
@@ -106,8 +106,8 @@ function Testimonials(props) {
                             />
                             <div className="pt-4 text-center">
                                 <h5 className="title">
-                                    <span className="d-block mb-1">Sidiq & Hanifah</span>
-                                    <p className="text-black-50">Sekawan stories semoga sukses selalu</p>
+                                    <span className="text-black-50 mb-1">Sidiq & Hanifah</span>
+                                    <p style={{ fontSize: "0.8rem" }} className="text-black-50">Sekawan stories semoga sukses selalu</p>
                                 </h5>
                             </div>
                         </div>
@@ -120,7 +120,7 @@ function Testimonials(props) {
 
     return (
         <div>
-            <Carousel activeIndex={activeIndex} next={next} previous={previous} interval={2000}>
+            <Carousel activeIndex={activeIndex} next={next} previous={previous} interval={5000}>
                 <CarouselIndicators
                     items={items}
                     activeIndex={activeIndex}

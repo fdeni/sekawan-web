@@ -24,7 +24,7 @@ class About extends React.Component {
     return (
       <>
         <section className="section section-shaped">
-  
+
           <Container className="py-md">
             <Row className="justify-content-between align-items-center">
               <Col className="mb-5 mb-lg-0" lg="5">
@@ -136,22 +136,23 @@ class About extends React.Component {
               </Col>
             </Row>
           </Container>
-        
-            {/* <Container> */}
-              <Row className="justify-content-center text-center mb-md">
-                <Col lg="8">
-                <h2 className="display-4 text-black-50 text-center"><span>Testimonials</span></h2>
-                  <p className="text-black-50">
-                  Our past clients have to say about their good experience with us. Every insight, reviews, and testimonials become valuable to our team.
-                  </p>
-                </Col>
-              </Row>
-              <Testimonials></Testimonials>
-            {/* </Container> */}
-      
+
+
+          <Row className="justify-content-center text-center mb-md mt-sm">
+            <Col lg="8">
+              <h2 className="display-4 text-black-50 text-center"><span>Testimonials</span></h2>
+              <p className="text-black-50">
+                Our past clients have to say about their good experience with us. Every insight, reviews, and testimonials become valuable to our team.
+              </p>
+            </Col>
+          </Row>
+          {/* <Container className> */}
+            <Testimonials></Testimonials>
+          {/* </Container> */}
+
 
           {/* SVG separator */}
-        
+
         </section>
       </>
     );
