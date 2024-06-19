@@ -170,7 +170,7 @@ class TabsSection extends React.Component {
                             item.services[this.state.plainTabs].packages.map((prop, index) => (
                               <Col key={index} xs="6" sm="6" md="4" lg="3" className="mb-4 d-flex justify-content-center">
                                 <Cards
-                                  image={require("assets/img/card/wedding.jpg")}
+                                  image={prop.image}
                                   title={prop.title}
                                   price={prop.price}
                                   packageItem={[item.services[this.state.plainTabs].name, prop]}
@@ -191,7 +191,7 @@ class TabsSection extends React.Component {
                             item.services[this.state.plainTabs].packages.map((prop, index) => (
                               <Col key={index} xs="6" sm="6" md="4" lg="3" className="mb-4 d-flex justify-content-center">
                                 <Cards
-                                  image={require("assets/img/card/wedding.jpg")}
+                                  image={prop.image}
                                   title={prop.title}
                                   price={prop.price}
                                   packageItem={[item.services[this.state.plainTabs].name, prop]}
@@ -211,7 +211,7 @@ class TabsSection extends React.Component {
                             item.services[this.state.plainTabs].packages.map((prop, index) => (
                               <Col key={index} xs="6" sm="6" md="4" lg="3" className="mb-4 d-flex justify-content-center">
                                 <Cards
-                                  image={require("assets/img/card/wedding.jpg")}
+                                  image={prop.image}
                                   title={prop.title}
                                   price={prop.price}
                                   packageItem={[item.services[this.state.plainTabs].name, prop]}
@@ -231,7 +231,7 @@ class TabsSection extends React.Component {
                             item.services[this.state.plainTabs].packages.map((prop, index) => (
                               <Col key={index} xs="6" sm="6" md="4" lg="3" className="mb-4 d-flex justify-content-center">
                                 <Cards
-                                  image={require("assets/img/card/wedding.jpg")}
+                                  image={prop.image}
                                   title={prop.title}
                                   price={prop.price}
                                   packageItem={[item.services[this.state.plainTabs].name, prop]}
