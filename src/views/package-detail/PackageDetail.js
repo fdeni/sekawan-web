@@ -25,6 +25,7 @@ class PageDetail extends React.Component {
     let data = servicesSnapshot.data();
     console.log(data)
     this.setState({ service: [data] });
+    const baseUrl = 'assets/img/card/';
   }
 
   render() {

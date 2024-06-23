@@ -17,10 +17,10 @@ class Cards extends React.Component {
     const { title, packageItem, price, bodies, image } = this.props;
     return (
       <>
-        <Card style={{ width: "17rem", overflowY: "auto", marginTop: "1.5rem" }} className="shadow border-0">
-          <CardImg style={{height:"auto", maxHeight:"17rem"}}
+        <Card style={{ width: "14.5rem", overflowY: "auto", marginTop: "1.5rem" }} className="shadow border-0">
+          <CardImg style={{height:"auto", maxHeight:"auto"}}
             alt=""
-            src={image}
+            src={require(`assets/img/card/${image}`)}
             top
           />
           <CardBody>
